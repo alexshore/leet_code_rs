@@ -7,6 +7,6 @@
 
 ## Usage
 
-- `git clone https://github.com/alexshore/leet_code_rs.git`
+- `git clone https://github.com/alexshore/leetcode_rs.git`
 - choose a directory
 - `cargo test`
