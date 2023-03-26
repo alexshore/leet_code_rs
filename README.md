@@ -9,8 +9,4 @@
 
 - `git clone https://github.com/alexshore/leet_code_rs.git`
 - choose a directory
-- `cargo run`
-
-## TODO
-
-- add actual loading of testcases via files rather than manual
+- `cargo test`
