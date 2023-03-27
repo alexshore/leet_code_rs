@@ -1,8 +1,7 @@
-#[allow(dead_code)]
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
-    #[allow(dead_code)]
     pub fn number_of_steps(mut num: i32) -> i32 {
         let mut steps: i32 = 0;
         while num > 0 {

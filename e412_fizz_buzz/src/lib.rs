@@ -1,8 +1,7 @@
-#[allow(dead_code)]
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
-    #[allow(dead_code)]
     pub fn fizz_buzz(n: i32) -> Vec<String> {
         let mut output: Vec<String> = vec![];
         for i in 1..n + 1 {

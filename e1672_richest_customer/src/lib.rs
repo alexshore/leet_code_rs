@@ -1,8 +1,7 @@
-#[allow(dead_code)]
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
-    #[allow(dead_code)]
     pub fn maximum_wealth(accounts: Vec<Vec<i32>>) -> i32 {
         accounts.iter().map(|account| account.iter().sum()).max().unwrap()
     }

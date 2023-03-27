@@ -1,8 +1,7 @@
-#[allow(dead_code)]
+#![allow(dead_code)]
 struct Solution;
 
 impl Solution {
-    #[allow(dead_code)]
     pub fn can_construct(ransom_note: String, magazine: String) -> bool {
         for char in ransom_note.chars() {
             if ransom_note.matches(char).count() > magazine.matches(char).count() {
