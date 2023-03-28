@@ -33,7 +33,5 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     #[test]
-    fn case_1() {
-        assert!(true)
-    }
+    fn case_1() {}
 }
