@@ -6,13 +6,12 @@ impl Solution {
         let mut stack: Vec<char> = vec![];
         for char in s.chars() {
             match char {
+                '(' | '{' | '[' => stack.push(char),
                 ')' | '}' | ']' if stack.is_empty() => return false,
                 ')' if *stack.last().unwrap() == '(' => stack.truncate(stack.len() - 1),
                 '}' if *stack.last().unwrap() == '{' => stack.truncate(stack.len() - 1),
                 ']' if *stack.last().unwrap() == '[' => stack.truncate(stack.len() - 1),
-                ')' | '}' | ']' => return false,
-                '(' | '{' | '[' => stack.push(char),
-                _ => unreachable!(),
+                _ => return false,
             };
         }
 
